@@ -12,7 +12,7 @@ public class CalculatorAdditionService {
 	
 	public String subtractService(String inputA,String inputB) throws Exception{
 		System.out.println("Entered subtractService:::inputA is "+inputA+"and InputB is "+inputB);
-		String result=String.valueOf(Integer.parseInt(inputA)+Integer.parseInt(inputB));
+		String result=String.valueOf(Integer.parseInt(inputA)-Integer.parseInt(inputB));
 		System.out.println("Exiting subtractService::"+result);
 		
 	return result;	
