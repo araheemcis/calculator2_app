@@ -8,6 +8,10 @@
 	<packaging>war</packaging>
 	<name>calculatorApp</name>
 	<description>calculatorApp</description>
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
 	<build>
 		<finalName>${project.artifactId}</finalName>
 	</build>
