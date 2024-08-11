@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
    repository: araheemcis/calculatorapp
-   tag: "10341965003"
+   tag: "10341970048"
 
 
 
