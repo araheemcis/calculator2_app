@@ -1,4 +1,4 @@
-FROM quay.io/wildfly/wildfly:27.0.0.Final
+FROM quay.io/wildfly/wildfly
 
 USER root
 
