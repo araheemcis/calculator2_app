@@ -10,11 +10,13 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ "main" ]
     paths-ignore:
-    - 'Read.md'
-    - '.github/*'
-    - 'helm/*'
+           - 'Read.md'
+           - '.github/*'
+           - 'helm/*'
+    branches:
+       - main
+          
   pull_request:
     branches: [ "main" ]
 
@@ -80,13 +82,13 @@ jobs:
       run: |
         sed -i 's/tag: .*/tag: "${{github.run_id}}"/' helm/calculator_chart/values.yaml
 
-  #  - name: Commit and push changes
-   #   run: |
-    #    git config --global user.email "araheemcis@gmail.com"
-     #   git config --global user.name "Abdul Raheem"
-      #  git add helm/calculator_chart/values.yaml
-       # git commit -m "Update tag in Helm chart"
-        #git push
+    - name: Commit and push changes
+      run: |
+        git config --global user.email "araheemcis@gmail.com"
+        git config --global user.name "Abdul Raheem"
+        git add helm/calculator_chart/values.yaml
+        git commit -m "Update tag in Helm chart"
+        git push
 
 
    # - name: Build and push docker image
