@@ -48,7 +48,7 @@ jobs:
        uses: mr-smithers-excellent/docker-build-push@v6
        with: 
          image: araheemcis/calculatorapp
-         tags: ${{ secrets.DOCKERHUB_USERNAME }}/calculatorapp:${{github.run_id}}
+         tags: ${{github.run_id}}
          registry: docker.io
          dockerfile: Dockerfile
          username: ${{ secrets.DOCKER_USEERNAME }}
