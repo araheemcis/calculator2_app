@@ -2,7 +2,7 @@ FROM quay.io/wildfly/wildfly
 
 USER root
 
-RUN yum install -y java-1.8.0-openjdk-devel
+RUN dnf install -y java-1.8.0-openjdk-devel
 
 ENV JAVA_HOME /usr/lib/jvm/java-1.8.0
 
