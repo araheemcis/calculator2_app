@@ -50,7 +50,7 @@ jobs:
          image: araheemcis/calculatorapp
          tags: ${{github.run_id}}
          registry: docker.io
-         dockerfile: Dockerfile
+         dockerfile: ./Dockerfile
          username: ${{ secrets.DOCKER_USEERNAME }}
          password: ${{ secrets.DOCKER_PASSWORD }}
 
